@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/bff7ea3e36.js" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
  
  <!--    <style>
@@ -20,7 +22,7 @@
 </head>
 <body>
     <!-- start - header -->
-    <header>
+    <header class="container">
         <div>
             <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" class="logo-header">
         </div>
@@ -28,19 +30,18 @@
             <nav>
                 <a href="#about">About</a> 
                 <a href="#contact">Contact</a> 
-                <a href="http://www.ironhack.com"></a>                            
+                <a href="http://www.ironhack.com">Buy Now</a                         
             </nav>
             </div>
-            <a href="#">Login</a> 
-            <a href="#">Buy Now</a> 
-            <a href="#">Icon</a> 
+            <a href="#Login"><i class="far fa-user-circle"></i></a> 
+             <a href="#Icon"><i class="fas fa-search"></i></a> 
       </div>
    </header>
     <!-- end - header -->
 
     <!-- start - hero -->
 
-<section id="hero">
+<section id="hero" class="container">
     <h1>Holiday</h1>
     <h4>Subheading 1</h4>
     <button class="btn-large">This is a Button</button>
@@ -49,12 +50,12 @@
   <!-- end - hero -->
 
   <!-- start - cards -->
-  <section> 
+  <section id="card" class="container"> 
       <!-- start - card 1 -->
       <div class="card">
         <img src="img/frank-mckenna-eXHeq48Z-Q4-unsplash.jpg" alt="">
         <h3>Card Title</h3>
-        <p>Description <em> blabla </em></p>
+        <p>Description <em> blabla </em> Second Paragraph</p>
         avatar
         author
         <button>Click me</button>
@@ -65,13 +66,13 @@
       <!-- start - card 2 -->
  
       <div class="card">
-        <img src="img/frank-mckenna-OD9EOzfSOh0-unsplash.jpg" alt="">
+        <img src="img/frank-mckenna-OD9EOzfSOh0-unsplash.jpg" alt="Sunny Bearch 1">
         <h3>Card Title</h3>
         <p>Description</p>
         avatar
         author
-        <button>Click me</button>
-
+       <!--  <button>Click me</button>
+ -->
         <!-- end - card 2 -->
 
       </div>
@@ -85,7 +86,7 @@
         <p>Description</p>
         avatar
         author
-        <button>Click me</button>
+        <!-- <button>Click me</button> -->
 
       </div>
       <!-- end - card 3 -->
@@ -96,20 +97,75 @@
   <!-- start - about -->
   <section id="about">
       About
-  </section>
+        </section>
 
    <!-- end - about -->
 
    <!-- start - contact -->
    <section id="contact">
-   Contact
+       <h3>Let's Connect</h3>
+       <label for="name">Name:</label>
+       <input type="text" id="name">
+
+       <br><br>
+
+       <label for="email">Email:</label>
+       <input type="email" id="email">
+
+       <br><br>
+
+       <input type="checkbox" id="terms" checked>
+       <label for="terms">Accept terms and conditions:</label>
+       
+       <br><br>
+
+       <label for="date">Starting Date</label>
+       <input type="date" id="date">
+
+       <br><br>
+
+       <label for="document">Add your ID</label>
+       <input type=file" id="document" value="test">
+
+       <br><br>
+
+       <label for="password"> Create a password</label>
+       <input type="password" id="password">
+
+       <br><br>
+
+       <label for="mobile">Your Phone Numeber</label>
+       <input type="tel" id="mobile">
+
+       <br><br>
+
+       <input type="submit" value="Send all this info">
+
+    </section>
+
+
+
+<!--        <input type="date">
+
+       <input type="file">
+
+       <input type="password">
+
+       <input type="tel">
+
+       <input type="submit"> -->
+
+   
    </section>
 
       <!-- end - contact -->
 
       <!-- start - footer -->
       <footer>
-          Here is the Footer. Check it out.
+         <p>Follow Me</p>
+          <i class="fab fa-behance fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-medium fa-2x"></i>
       </footer>
       <!-- end - about -->
 
